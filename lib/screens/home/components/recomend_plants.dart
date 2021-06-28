@@ -47,7 +47,14 @@ class RecomendsPlants extends StatelessWidget {
             title: "Samantha",
             country: "Pakistan",
             price: 1000,
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsScreen(),
+                ),
+              );
+            },
           ),
         ],
       ),

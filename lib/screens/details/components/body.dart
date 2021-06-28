@@ -22,13 +22,11 @@ class Body extends StatelessWidget {
               SizedBox(
                 width: size.width / 2,
                 height: 84,
-                child: FlatButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(20),
-                    ),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                   primary: kPrimaryColor,
+                    padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                   ),
-                  color: kPrimaryColor,
                   onPressed: () {},
                   child: Text(
                     "Buy Now",
@@ -37,10 +35,14 @@ class Body extends StatelessWidget {
                       fontSize: 16,
                     ),
                   ),
-                ),
-              ),
+                    ),
+          ),
               Expanded(
-                child: FlatButton(
+                child: ElevatedButton(
+                  style : ElevatedButton.styleFrom(
+                    primary: kPrimaryColor,
+                    padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                  ),
                   onPressed: () {},
                   child: Text("Description"),
                 ),
