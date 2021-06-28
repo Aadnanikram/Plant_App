@@ -119,7 +119,7 @@ class RecomendPlantCard extends StatelessWidget {
                   ),
                   Spacer(),
                   Text(
-                    '\$Rsprice',
+                    '\Rs$price',
                     style: Theme.of(context)
                         .textTheme
                         .button
