@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:plant_app/constants.dart';
 import 'package:plant_app/screens/home/components/featurred_plants.dart';
+import 'package:plant_app/screens/home/components/header_with_seachbox.dart';
 import 'package:plant_app/screens/home/components/recomend_plants.dart';
 import 'package:plant_app/screens/home/components/title_with_more_btn.dart';
 
@@ -15,7 +16,7 @@ class Body extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          HeaderWithSearchBox(size: size),
+          HeadWithSearchBox(size: size),
           TitleWithMoreBtn(title: "Recomended", press: () {}),
           RecomendsPlants(),
           TitleWithMoreBtn(title: "Featured Plants", press: () {}),
