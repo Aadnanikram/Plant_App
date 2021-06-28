@@ -25,7 +25,7 @@ class Body extends StatelessWidget {
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                    primary: kPrimaryColor,
-                    padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                    padding: EdgeInsets.symmetric(horizontal: 50, vertical: 30),
                   ),
                   onPressed: () {},
                   child: Text(
@@ -40,8 +40,8 @@ class Body extends StatelessWidget {
               Expanded(
                 child: ElevatedButton(
                   style : ElevatedButton.styleFrom(
-                    primary: kPrimaryColor,
-                    padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                    primary: Colors.black,
+                    padding: EdgeInsets.symmetric(horizontal: 50, vertical: 35),
                   ),
                   onPressed: () {},
                   child: Text("Description"),
